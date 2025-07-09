@@ -1,0 +1,5 @@
+result
+result/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
