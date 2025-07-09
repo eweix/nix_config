@@ -16,11 +16,11 @@
 
   inputs = {
     # set nix-darwin channel
-    nixpkgs-darwin.url = "github:nixos/nixpkgs/nixpkgs-24.05-darwin";
+    nixpkgs-darwin.url = "github:nixos/nixpkgs/nixpkgs-24.11-darwin";
 
     # home-manager, used for managing user configuration
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.05";
+      url = "github:nix-community/home-manager/release-24.11";
 
       # The `follows` keyword in inputs is used for inheritance. Here,
       # `inputs.nixpkgs` of home-manager is kept consistent with the
@@ -31,7 +31,7 @@
     };
 
     darwin = {
-      url = "github:lnl7/nix-darwin";
+      url = "github:lnl7/nix-darwin/nix-darwin-24.11";
       inputs.nixpkgs.follows = "nixpkgs-darwin";
     };
   };
@@ -89,6 +89,6 @@
     };
 
     # nix code formatter
-    formatter.${system} = nixpkgs.legacyPackages.${system}.alejandra;
+    # formatter.${system} = nixpkgs.legacyPackages.${system}.alejandra;
   };
 }
