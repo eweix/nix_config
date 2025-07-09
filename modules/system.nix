@@ -47,9 +47,9 @@
 
       # customize trackpad
       trackpad = {
-        Clicking = false; # disable tap to click
-        TrackpadRightClick = true; # enable two finger right click
-        TrackpadThreeFingerDrag = true; # enable three finger drag
+         Clicking = false; # disable tap to click
+         TrackpadRightClick = true; # enable two finger right click
+         TrackpadThreeFingerDrag = true; # enable three finger drag
       };
 
       # customize settings that not supported by nix-darwin directly
@@ -58,7 +58,7 @@
       NSGlobalDomain = {
         # `defaults read NSGlobalDomain "xxx"`
         # "com.apple.mouse.scaling" = 8;
-        "com.apple.trackpad.scaling" = 3; # maximum speed for trackpad movement
+        # "com.apple.trackpad.scaling" = 3; # maximum speed for trackpad movement
         "com.apple.swipescrolldirection" = true; # enable natural scrolling(default to true)
         "com.apple.sound.beep.feedback" = 0; # disable beep sound when pressing volume up/down key
         AppleInterfaceStyle = "Dark"; # dark mode
@@ -199,17 +199,17 @@
 
       # nerdfonts
       # https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/data/fonts/nerdfonts/shas.nix
-      (nerdfonts.override {
-        fonts = [
+      #(nerdfonts.override {
+      #  fonts = [
           # symbols icon only
-          "NerdFontsSymbolsOnly"
+      #    "NerdFontsSymbolsOnly"
           # Characters
-          "Fira Code Nerd Font Mono"
+      #    "Fira Code Nerd Font Mono"
           # "JetBrainsMono"
           # "Iosevka"
-          "Departure Mono"
-        ];
-      })
+      #    "Departure Mono"
+      #  ];
+      #})
     ];
   };
 }

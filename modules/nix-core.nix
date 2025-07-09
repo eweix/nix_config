@@ -15,6 +15,9 @@
   # don't wan't the daemon service to be managed for you.
   # nix.useDaemon = true;
 
+  # disable nix management by nix-darwin
+  nix.enable = false;
+
   nix.package = pkgs.nix;
 
   # The following settings manage garbage collection and storage optimization to

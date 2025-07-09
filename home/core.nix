@@ -19,18 +19,18 @@
 
     # development
     uv # python tools
-    miniconda # science python!
+    # conda # science python!
     hugo # static site generator
     # git # version control
     lazygit # TUI for git
     rustc
-    mitscheme # didactic language
+    # mitscheme # didactic language
     tree-sitter
     go
     luarocks-nix # lua module manager
     prettierd # prettier daemon
     wireshark # monitor network activity
-    insomnia # REST client
+    # insomnia # REST client
     hub # github client
 
     # misc
@@ -81,22 +81,22 @@
     # found a snippet that allows recursive import of *everything* in the
     # dotfiles subdirectory here.
     # see: https://github.com/nix-community/home-manager/issues/3849#issuecomment-2115899992
-    home.file = with pkgs; let
-      listFilesRecursive = dir: acc:
-        lib.flatten (lib.mapAttrsToList
-          (k: v:
-            if v == "regular"
-            then "${acc}${k}"
-            else listFilesRecursive dir "${acc}${k}/")
-          (builtins.readDir "${dir}/${acc}"));
+    # home.file = with pkgs; let
+    #  listFilesRecursive = dir: acc:
+    #    lib.flatten (lib.mapAttrsToList
+    #      (k: v:
+    #        if v == "regular"
+    #        then "${acc}${k}"
+    #        else listFilesRecursive dir "${acc}${k}/")
+    #      (builtins.readDir "${dir}/${acc}"));
 
-      toHomeFiles = dir:
-        builtins.listToAttrs
-        (map (x: {
-          name = x;
-          value = {source = "${dir}/${x}";};
-        }) (listFilesRecursive dir ""));
-    in
-      toHomeFiles ./dotfiles;
+    #  toHomeFiles = dir:
+    #    builtins.listToAttrs
+    #    (map (x: {
+    #      name = x;
+    #      value = {source = "${dir}/${x}";};
+    #    }) (listFilesRecursive dir ""));
+    #in
+    #  toHomeFiles ./dotfiles;
   };
 }
