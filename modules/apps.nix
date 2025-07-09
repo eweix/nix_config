@@ -45,38 +45,21 @@
     # https://github.com/mas-cli/mas
     masApps = {
       Paprika = 1303222868; # Recipe manager
-      Things = 904280696; # To-do list
+      # Things = 904280696; # To-do list
       Amphetamine = 937984704; # Sleep utility
       Xcode = 497799835; # Developer tools
     };
 
     taps = [
-      "homebrew/services"
       # "mhaeuser/mhaeuser" # battery toolkit
       # "domt4/autoupdate" # update daemon for homebrew
     ];
 
     # `brew install`
     brews = [
-      # "wget" # download tool
-      # "curl" # do not install curl via nixpkgs, it's not working well on macOS!
-      # "aria2" # download tool
-      # "httpie" # http client
-      # "coreutils"
-      # "direnv"
-      # "fd"
-      # "gcc"
-      # "grep"
-      # "ripgrep"
-      # "trash"
-      # "tree-sitter"
-      # "fastfetch" # Neofetch, but maintained
-      # "go"
-      # "hugo" # Static site generator
-      # "node"
-      # "node-sass"
-      # "mit-scheme" # Didactic language
-      # "rust" # For funsies
+      "mit-scheme" # Didactic language
+      "tor"
+      "pymol"
 
       # "battery-toolkit" # battery life tool
       # TODO find some way to automatically run the following script
@@ -88,8 +71,7 @@
     casks = [
       # Browsing
       "netnewswire" # RSS reader
-      "librewolf" # Firefox, but with privacy
-      "tor" # Onion router
+      "firefox"
       "eloston-chromium" # Chrome, without telemetry
 
       # IM & audio & remote desktop & meeting
@@ -122,7 +104,6 @@
 
       # Science tools
       "wolfram-engine" # mathematica w/out GUI
-      "pymol" # Molecular structure viewing
       "jalview" # Sequence alignments
       "fiji" # Image processing tool
 
@@ -132,7 +113,6 @@
       "keka" # unarchiver
       "selfcontrol"
       "stats" # display stats
-      "cheatsheet" # show all shortcuts
       "jordanbaird-ice" # menu bar utility
 
       "alfred" # Launcher to replace spotlight
