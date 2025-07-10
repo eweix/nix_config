@@ -19,6 +19,9 @@
       /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
     '';
 
+    # set primary user
+    # primaryUser = "eweix";
+
     defaults = {
       # menuExtraClock.Show24Hour = true;  # show 24 hour clock
 
@@ -178,7 +181,7 @@
   };
 
   # Add ability to used TouchID for sudo authentication
-  security.pam.enableSudoTouchIdAuth = true;
+  # security.pam.services.sudo_local.touchIdAuth = true;
 
   # Create /etc/zshrc that loads the nix-darwin environment.
   # this is required if you want to use darwin's default shell - zsh
@@ -186,30 +189,4 @@
   environment.shells = [
     pkgs.zsh
   ];
-
-  # Set your time zone.
-  # time.timeZone = "Asia/shanghai";
-
-  # Fonts
-  fonts = {
-    packages = with pkgs; [
-      # icon fonts
-      material-design-icons
-      font-awesome
-
-      # nerdfonts
-      # https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/data/fonts/nerdfonts/shas.nix
-      #(nerdfonts.override {
-      #  fonts = [
-          # symbols icon only
-      #    "NerdFontsSymbolsOnly"
-          # Characters
-      #    "Fira Code Nerd Font Mono"
-          # "JetBrainsMono"
-          # "Iosevka"
-      #    "Departure Mono"
-      #  ];
-      #})
-    ];
-  };
 }

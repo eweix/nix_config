@@ -18,22 +18,25 @@
     nmap # A utility for network discovery and security auditing
 
     # development
+    docker # for building containers
+    starship # nicer command line prompts
     uv # python tools
-    # conda # science python!
     hugo # static site generator
-    # git # version control
     lazygit # TUI for git
     rustc
-    # mitscheme # didactic language
+    rustup # rust toolchain installer
     tree-sitter
     go
+    nodenv # for multiple node installations
+    luajit # lua 5.1 compiler
     luarocks-nix # lua module manager
+    lua-language-server
     prettierd # prettier daemon
     wireshark # monitor network activity
-    # insomnia # REST client
     hub # github client
 
     # misc
+    chezmoi
     fastfetch # neofetch replacement
     cowsay
     file

@@ -44,10 +44,10 @@
     # them. otherwise Apple Store will refuse to install them. For details, see
     # https://github.com/mas-cli/mas
     masApps = {
-      Paprika = 1303222868; # Recipe manager
-      # Things = 904280696; # To-do list
-      Amphetamine = 937984704; # Sleep utility
-      Xcode = 497799835; # Developer tools
+      "Paprika Recipe Manager 3" = 1303222868; # Recipe manager
+      # "Things" = 904280696; # To-do list
+      "Amphetamine" = 937984704; # Sleep utility
+      "Xcode" = 497799835; # Developer tools
     };
 
     taps = [
@@ -58,8 +58,10 @@
     # `brew install`
     brews = [
       "mit-scheme" # Didactic language
-      "tor"
+      # "tor"
       "pymol"
+      "curl"
+      "wget"
 
       # "battery-toolkit" # battery life tool
       # TODO find some way to automatically run the following script
@@ -72,7 +74,7 @@
       # Browsing
       "netnewswire" # RSS reader
       "firefox"
-      "eloston-chromium" # Chrome, without telemetry
+      "ungoogled-chromium" # Chrome, without telemetry
 
       # IM & audio & remote desktop & meeting
       "signal" # encrypted messanger client
@@ -82,10 +84,11 @@
 
       # Development
       "wezterm" # Terminal emulator
-      "docker" # Virutalization software
+      # "docker" # Virutalization software
       "utm" # Virtual Machine Manager
       "sublime-text" # Best text editor, aside from neovim
       "mactex-no-gui" # TeX live installation, no GUI
+      "miniconda"
 
       # Security
       "lulu" # Firewall
@@ -122,6 +125,7 @@
       "retroarch" # Emulator frontend
       "anki" # flashcards
       "fantastical" # Calendar
+      "calibre"
 
       # fonts
       "font-departure-mono-nerd-font" # Pixel terminal font
