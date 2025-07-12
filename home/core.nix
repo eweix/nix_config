@@ -24,19 +24,18 @@
     # docker # for building containers
     starship # nicer command line prompts
     uv # python tools
-    # typst # for writing!
+    typst # for writing!
     # hugo # static site generator
     lazygit # TUI for git
-    # rustc
-    # rustup # rust toolchain installer
+    rustc
+    rustup # rust toolchain installer
     tree-sitter
-    # go
+    go
     # nodenv # for multiple node installations
     # luajit # lua 5.1 compiler
     # luarocks-nix # lua module manager
     # lua-language-server
-    # prettierd # prettier daemon
-    # wireshark # monitor network activity
+    prettierd # prettier daemon
 
     # misc
     chezmoi
@@ -51,6 +50,13 @@
     # zstd
     # caddy
     # gnupg
+
+    # machine learning tools
+    ollama
+    python313
+    python313Packages.torch
+    python313Packages.torchvision
+    python313Packages.torchaudio
   ];
 
   programs = {

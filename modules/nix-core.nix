@@ -27,16 +27,16 @@
 
   # do garbage collection weekly to keep disk usage low
   # nix.gc = {
-    # automatic = lib.mkDefault true;
-    # interval = { Weekday = 0; Hour = 0; Minute = 0; };
-    # options = lib.mkDefault "--delete-older-than 7d";
+  # automatic = lib.mkDefault true;
+  # interval = { Weekday = 0; Hour = 0; Minute = 0; };
+  # options = lib.mkDefault "--delete-older-than 7d";
   # };
 
   # nix.settings = {
-    # Disable auto-optimise-store because of this issue:
-    #   https://github.com/NixOS/nix/issues/7273
-    # "error: cannot link '/nix/store/.tmp-link-xxxxx-xxxxx' to '/nix/store/.links/xxxx': File exists"
-    # auto-optimise-store = false;
-    # keep-failed = false;
+  # Disable auto-optimise-store because of this issue:
+  #   https://github.com/NixOS/nix/issues/7273
+  # "error: cannot link '/nix/store/.tmp-link-xxxxx-xxxxx' to '/nix/store/.links/xxxx': File exists"
+  # auto-optimise-store = false;
+  # keep-failed = false;
   # };
 }

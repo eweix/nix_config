@@ -1,10 +1,16 @@
-{...}: {
+{ ... }: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    initExtra = ''
+    initContent = ''
       eval "$(direnv hook zsh)"
       eval "$(starship init zsh)"
+
+      # ollama settings for gpu acceleration
+      export OLLAMA_GPU_LAYERS=-1
+      export OLLAMA_KEEP_ALIVE=10m
+      export PYTORCH_ENABLE_MPS_FALLBACK=1
+      export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0
     '';
   };
 

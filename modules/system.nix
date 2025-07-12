@@ -45,9 +45,9 @@
 
       # customize trackpad
       trackpad = {
-         Clicking = false; # disable tap to click
-         TrackpadRightClick = true; # enable two finger right click
-         TrackpadThreeFingerDrag = true; # enable three finger drag
+        Clicking = false; # disable tap to click
+        TrackpadRightClick = true; # enable two finger right click
+        TrackpadThreeFingerDrag = true; # enable three finger drag
       };
 
       # customize settings that not supported by nix-darwin directly
