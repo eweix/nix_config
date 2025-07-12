@@ -45,7 +45,7 @@
     # https://github.com/mas-cli/mas
     masApps = {
       "Paprika Recipe Manager 3" = 1303222868; # Recipe manager
-      # "Things" = 904280696; # To-do list
+      "Things 3" = 904280696; # To-do list
       "Amphetamine" = 937984704; # Sleep utility
       "Xcode" = 497799835; # Developer tools
     };
@@ -84,9 +84,10 @@
 
       # Development
       "wezterm" # Terminal emulator
-      # "docker" # Virutalization software
       "utm" # Virtual Machine Manager
       "sublime-text" # Best text editor, aside from neovim
+      "zed" # decent ide-like thingy
+      "visual-studio-code" # all-purpose IDE
       "mactex-no-gui" # TeX live installation, no GUI
       "miniconda"
 

@@ -14,19 +14,26 @@ default:
 #
 ############################################################################
 
+# need to use sudo for darwin-rebuild 
+#   https://github.com/nix-darwin/nix-darwin/issues/1457
+
 [group('desktop')]
 darwin:
   nix build .#darwinConfigurations.{{hostname}}.system \
     --extra-experimental-features 'nix-command flakes'
 
-  ./result/sw/bin/darwin-rebuild switch --flake .#{{hostname}}
+  sudo ./result/sw/bin/darwin-rebuild switch --flake .#{{hostname}}
+
+  /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
 
 [group('desktop')]
 darwin-debug:
   nix build .#darwinConfigurations.{{hostname}}.system --show-trace --verbose \
     --extra-experimental-features 'nix-command flakes'
 
-  ./result/sw/bin/darwin-rebuild switch --flake .#{{hostname}} --show-trace --verbose
+  sudo ./result/sw/bin/darwin-rebuild switch --flake .#{{hostname}} --show-trace --verbose
+
+  /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
 
 ############################################################################
 #

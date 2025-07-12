@@ -1,5 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    direnv # very important for making reproducible development shells
+
     # archives
     zip
     xz
@@ -12,45 +14,56 @@
     yq-go # yaml processer https://github.com/mikefarah/yq
     fzf # A command-line fuzzy finder
     pandoc # A file processer and converter
+    pngquant # compresses pngs very nicely!
 
     aria2 # A lightweight multi-protocol & multi-source command-line download utility
-    socat # replacement of openbsd-netcat
-    nmap # A utility for network discovery and security auditing
+    # socat # replacement of openbsd-netcat
+    # nmap # A utility for network discovery and security auditing
 
     # development
-    docker # for building containers
+    # docker # for building containers
     starship # nicer command line prompts
     uv # python tools
-    hugo # static site generator
+    # typst # for writing!
+    # hugo # static site generator
     lazygit # TUI for git
-    rustc
-    rustup # rust toolchain installer
+    # rustc
+    # rustup # rust toolchain installer
     tree-sitter
-    go
-    nodenv # for multiple node installations
-    luajit # lua 5.1 compiler
-    luarocks-nix # lua module manager
-    lua-language-server
-    prettierd # prettier daemon
-    wireshark # monitor network activity
-    hub # github client
+    # go
+    # nodenv # for multiple node installations
+    # luajit # lua 5.1 compiler
+    # luarocks-nix # lua module manager
+    # lua-language-server
+    # prettierd # prettier daemon
+    # wireshark # monitor network activity
 
     # misc
     chezmoi
     fastfetch # neofetch replacement
-    cowsay
-    file
-    which
+    # cowsay
+    # file
+    # which
     tree
-    gnused
-    gnutar
-    gawk
-    zstd
-    caddy
-    gnupg
+    # gnused
+    # gnutar
+    # gawk
+    # zstd
+    # caddy
+    # gnupg
   ];
 
   programs = {
+    # we use direnv with flakes in each project to create a reproducible
+    # development environment. This should work across computers and systems by
+    # determining all of the "system-level" programs that need to be installed.
+    direnv = {
+      enable = true;
+      enableBashIntegration = true;
+      enableZshIntegration = true;
+      nix-direnv.enable = true;
+    };
+
     # A modern replacement for ‘ls’
     # useful in bash/zsh prompt, not in nushell.
     eza = {

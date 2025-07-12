@@ -3,7 +3,7 @@
     enable = true;
     enableCompletion = true;
     initExtra = ''
-      export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
+      eval "$(direnv hook zsh)"
       eval "$(starship init zsh)"
     '';
   };
@@ -15,6 +15,17 @@
     n = "nvim";
     vim = "nvim";
     vi = "nvim";
+    ff = "fastfetch";
+
+    # shorthand command to make a new template
+    # dvd = ''
+    #   nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/dev-templates/*#{ echo $2 }" \
+    #   && echo 'use flake' >> .envrc \
+    #   && direnv allow
+    # '';
+    # dvdpy = "nix flake init --template \"\" && echo 'use flake' >> .envrc && direnv allow";
+    # dvdhugo = "nix flake init --template \" \" && echo 'use flake' >> .envrc && direnv allow";
+    # dvdrust = "nix flake init --template \"https://flakehub.com/f/the-nix-way/dev-templates/*#rust\" && echo 'use flake' >> .envrc && direnv allow";
 
     # python development
     pyv = "source .venv/bin/activate || conda activate"; # python env activation command
@@ -23,6 +34,7 @@
     csave = "conda env export -v -f ENV.yml"; # export conda environment
 
     # other useful aliases
+    dots = "cd ~/.config && chezmoi edit";
     nixcon = "cd ~/dev/nix && nvim"; # edit dotfiles & nix config
     ls = "ls --color=auto"; # colorize ls output
     mkdir = "mkdir -pv"; # make parent directories when making directory
