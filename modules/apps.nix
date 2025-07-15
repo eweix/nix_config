@@ -111,6 +111,9 @@
       "jalview" # Sequence alignments
       "fiji" # Image processing tool
 
+      # for fun
+      "steam"
+
       # Misc
       "monitorcontrol" # Brightness and volume controls for external monitors.
       "leader-key" # Leader keys for commands/quick switching
