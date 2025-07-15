@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -22,29 +22,23 @@
     vim = "nvim";
     vi = "nvim";
     ff = "fastfetch";
+    lg = "lazygit";
+    ls = "ls --color=auto"; # colorize ls output
+    mkdir = "mkdir -pv"; # make parent directories when making directory
+    mount = "mount |column -t"; # make mount command readable
 
-    # shorthand command to make a new template
-    # dvd = ''
-    #   nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/dev-templates/*#{ echo $2 }" \
-    #   && echo 'use flake' >> .envrc \
-    #   && direnv allow
-    # '';
-    # dvdpy = "nix flake init --template \"\" && echo 'use flake' >> .envrc && direnv allow";
-    # dvdhugo = "nix flake init --template \" \" && echo 'use flake' >> .envrc && direnv allow";
-    # dvdrust = "nix flake init --template \"https://flakehub.com/f/the-nix-way/dev-templates/*#rust\" && echo 'use flake' >> .envrc && direnv allow";
+    # Shortcuts
+    dots = "cd ~/.config && chezmoi edit";
+    nixcon = "cd ~/dev/nix && nvim"; # edit dotfiles & nix config
+    snip = "cd ~/dev/snippets && nvim"; # edit
+    snips = "cd ~/dev/snippets && nvim";
+    snippets = "cd ~/dev/snippets && nvim";
+    dev = "cd ~/dev && eza";
 
     # python development
     pyv = "source .venv/bin/activate || conda activate"; # python env activation command
     pyd = "deactivate || conda deactivate"; #
     py = "python3";
     csave = "conda env export -v -f ENV.yml"; # export conda environment
-
-    # other useful aliases
-    dots = "cd ~/.config && chezmoi edit";
-    nixcon = "cd ~/dev/nix && nvim"; # edit dotfiles & nix config
-    ls = "ls --color=auto"; # colorize ls output
-    mkdir = "mkdir -pv"; # make parent directories when making directory
-    mount = "mount |column -t"; # make mount command readable
-    chez = "chezmoi";
   };
 }
