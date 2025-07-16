@@ -57,12 +57,10 @@
     # `brew install`
     brews = [
       "mit-scheme" # Didactic language
-      # "tor"
       "pymol"
       "curl"
       "wget"
       "pearcleaner" # useful utility for uninstalling apps
-
       "battery-toolkit" # battery life tool
     ];
 
@@ -72,6 +70,7 @@
       "netnewswire" # RSS reader
       "firefox"
       "ungoogled-chromium" # Chrome, without telemetry
+      "tor-browser"
 
       # IM & audio & remote desktop & meeting
       "signal" # encrypted messanger client
