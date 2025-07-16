@@ -51,8 +51,7 @@
     };
 
     taps = [
-      # "mhaeuser/mhaeuser" # battery toolkit
-      # "domt4/autoupdate" # update daemon for homebrew
+      "mhaeuser/mhaeuser" # battery toolkit
     ];
 
     # `brew install`
@@ -62,11 +61,9 @@
       "pymol"
       "curl"
       "wget"
+      "pearcleaner" # useful utility for uninstalling apps
 
-      # "battery-toolkit" # battery life tool
-      # TODO find some way to automatically run the following script
-      # brew autoupdate start 604800 --leaves-only --ac-only --upgrade --cleanup
-      # https://github.com/DomT4/homebrew-autoupdate
+      "battery-toolkit" # battery life tool
     ];
 
     # `brew install --cask`
