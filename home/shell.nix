@@ -5,17 +5,16 @@
     initContent = ''
       eval "$(direnv hook zsh)"
       eval "$(starship init zsh)"
-
-      # ollama settings for gpu acceleration
-      export OLLAMA_GPU_LAYERS=-1
-      export OLLAMA_KEEP_ALIVE=10m
-      export PYTORCH_ENABLE_MPS_FALLBACK=1
-      export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0
     '';
   };
 
   home.shellAliases = {
-    # file browsing and text editing
+    # list directory contents
+    # ls = "ls --color=auto"; # colorize ls output
+    l = "eza -lah";
+    ls = "eza";
+
+    # shortcuts
     k = "kubectl"; # kubernetes cluster manager
     y = "yazi";
     n = "nvim";
@@ -23,14 +22,16 @@
     vi = "nvim";
     ff = "fastfetch";
     lg = "lazygit";
-    ls = "ls --color=auto"; # colorize ls output
+    g = "lazygit";
+
     mkdir = "mkdir -pv"; # make parent directories when making directory
     mount = "mount |column -t"; # make mount command readable
 
     # Shortcuts
     dots = "cd ~/.config && chezmoi edit";
     nixcon = "cd ~/dev/nix && nvim"; # edit dotfiles & nix config
-    snip = "cd ~/dev/snippets && nvim"; # edit
+    flakes = "cd ~/dev/flakes && nvim"; # edit flake repo
+    snip = "cd ~/dev/snippets && nvim"; # edit snippets
     snips = "cd ~/dev/snippets && nvim";
     snippets = "cd ~/dev/snippets && nvim";
     dev = "cd ~/dev && eza";

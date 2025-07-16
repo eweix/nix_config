@@ -15,6 +15,7 @@
     fzf # A command-line fuzzy finder
     pandoc # A file processer and converter
     pngquant # compresses pngs very nicely!
+    fd # needed for some telescope and nvim stuff
 
     aria2 # A lightweight multi-protocol & multi-source command-line download utility
     # socat # replacement of openbsd-netcat
@@ -50,13 +51,6 @@
     # zstd
     # caddy
     # gnupg
-
-    # machine learning tools
-    ollama
-    python313
-    python313Packages.torch
-    python313Packages.torchvision
-    python313Packages.torchaudio
   ];
 
   programs = {
