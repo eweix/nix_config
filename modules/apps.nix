@@ -60,8 +60,6 @@
       "pymol"
       "curl"
       "wget"
-      "pearcleaner" # useful utility for uninstalling apps
-      "battery-toolkit" # battery life tool
     ];
 
     # `brew install --cask`
@@ -117,6 +115,8 @@
       "selfcontrol"
       "stats" # display stats
       "jordanbaird-ice" # menu bar utility
+      "pearcleaner" # useful utility for uninstalling apps
+      "battery-toolkit" # battery life tool
 
       "alfred" # Launcher to replace spotlight
       "daisydisk" # Diagnostics and disksweeping
