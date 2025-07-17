@@ -5,6 +5,8 @@
     initContent = ''
       eval "$(direnv hook zsh)"
       eval "$(starship init zsh)"
+      export PATH=/Users/eweix/orca:$PATH
+      export LD_LIBRARY_PATH=/Users/eweix/orca:$LD_LIBRARY_PATH
     '';
   };
 
