@@ -81,7 +81,7 @@
       "utm" # Virtual Machine Manager
       "sublime-text" # Best text editor, aside from neovim
       "zed" # decent ide-like thingy
-      "visual-studio-code" # all-purpose IDE
+      "vscodium" # all purpose IDE
       "mactex-no-gui" # TeX live installation, no GUI
       "miniconda"
 
@@ -131,6 +131,7 @@
       "font-departure-mono-nerd-font" # Pixel terminal font
       "font-fira-code-nerd-font" # Nicer nerd font
       "font-overpass-nerd-font" # Fun sans-serif font
+      "font-sf-mono-nerd-font-ligaturized" # SF mono nerd font
     ];
   };
 }
