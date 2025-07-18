@@ -18,39 +18,33 @@
     fd # needed for some telescope and nvim stuff
 
     aria2 # A lightweight multi-protocol & multi-source command-line download utility
-    # socat # replacement of openbsd-netcat
-    # nmap # A utility for network discovery and security auditing
 
     # development
     # docker # for building containers
     starship # nicer command line prompts
     uv # python tools
     typst # for writing!
-    # hugo # static site generator
+    hugo # static site generator
     lazygit # TUI for git
     rustc
     rustup # rust toolchain installer
     tree-sitter
     go
-    # nodenv # for multiple node installations
-    # luajit # lua 5.1 compiler
-    # luarocks-nix # lua module manager
-    # lua-language-server
     prettierd # prettier daemon
+
+    # finance tools
+    hledger # ledger replacement
+    hledger-iadd # ledger entry tui
+    hledger-interest # track interest with hledger
+    hledger-utils # editing and plotting utilities
+    hledger-web # web ui for hledger, if needed
+    puffin # hledger tui
 
     # misc
     chezmoi
     fastfetch # neofetch replacement
-    # cowsay
-    # file
-    # which
     tree
-    # gnused
-    # gnutar
-    # gawk
-    # zstd
-    # caddy
-    # gnupg
+    pay-respects # nicer version of The Fuck
   ];
 
   programs = {
