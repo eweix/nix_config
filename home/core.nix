@@ -20,7 +20,6 @@
     aria2 # A lightweight multi-protocol & multi-source command-line download utility
 
     # development
-    # docker # for building containers
     starship # nicer command line prompts
     uv # python tools
     typst # for writing!
@@ -33,14 +32,8 @@
     prettierd # prettier daemon
 
     # finance tools
-    beancount_2
+    beancount
     fava
-    hledger # ledger replacement
-    hledger-iadd # ledger entry tui
-    hledger-interest # track interest with hledger
-    hledger-utils # editing and plotting utilities
-    hledger-web # web ui for hledger, if needed
-    puffin # hledger tui
 
     # misc
     chezmoi

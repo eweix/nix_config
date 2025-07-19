@@ -7,7 +7,6 @@
       eval "$(starship init zsh)"
 
       export PATH="/Users/eweix/.local/bin:$PATH"
-      export LEDGER_FILE="/Users/eweix/Finances/main.journal"
 
       export PATH="/Users/eweix/orca:$PATH"
       export LD_LIBRARY_PATH="/Users/eweix/orca:$LD_LIBRARY_PATH"
@@ -43,7 +42,9 @@
     dev = "cd ~/dev && eza";
 
     # beancount functions
-    b = "nvim ~/beancount/ledger.beancount";
+    b = "nvim ~/Finances/ledgers/$(date +%Y).beancount";
+    beans = "cd ~/Finances && nvim ledgers/$(date +%Y).beancount";
+    money = "cd ~/Finances && fava main.beancount";
 
     # hledger functions
     h = "heldger";
