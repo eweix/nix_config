@@ -33,6 +33,8 @@
     prettierd # prettier daemon
 
     # finance tools
+    beancount_2
+    fava
     hledger # ledger replacement
     hledger-iadd # ledger entry tui
     hledger-interest # track interest with hledger

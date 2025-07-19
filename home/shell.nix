@@ -5,6 +5,9 @@
     initContent = ''
       eval "$(direnv hook zsh)"
       eval "$(starship init zsh)"
+
+      export PATH="/Users/eweix/.local/bin:$PATH
+
       export PATH=/Users/eweix/orca:$PATH
       export LD_LIBRARY_PATH=/Users/eweix/orca:$LD_LIBRARY_PATH
     '';
@@ -37,6 +40,14 @@
     snips = "cd ~/dev/snippets && nvim";
     snippets = "cd ~/dev/snippets && nvim";
     dev = "cd ~/dev && eza";
+
+    # beancount functions
+    b = "nvim ~/beancount/ledger.beancount";
+
+    # hledger functions
+    h = "heldger";
+    ha = "hledger add";
+    ledger = "cd ~/desk/finances && nvim";
 
     # python development
     pyv = "source .venv/bin/activate || conda activate"; # python env activation command
