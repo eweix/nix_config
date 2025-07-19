@@ -6,10 +6,11 @@
       eval "$(direnv hook zsh)"
       eval "$(starship init zsh)"
 
-      export PATH="/Users/eweix/.local/bin:$PATH
+      export PATH="/Users/eweix/.local/bin:$PATH"
+      export LEDGER_FILE="/Users/eweix/Finances/main.journal"
 
-      export PATH=/Users/eweix/orca:$PATH
-      export LD_LIBRARY_PATH=/Users/eweix/orca:$LD_LIBRARY_PATH
+      export PATH="/Users/eweix/orca:$PATH"
+      export LD_LIBRARY_PATH="/Users/eweix/orca:$LD_LIBRARY_PATH"
     '';
   };
 
