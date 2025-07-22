@@ -31,6 +31,8 @@
     go
     prettierd # prettier daemon
 
+    nodejs_24 # needed for tree-sitter, other packages
+
     # finance tools
     beancount
     fava
