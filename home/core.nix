@@ -31,8 +31,8 @@
     go
     prettierd # prettier daemon
 
-    luajit
-    luajitPackages.luarocks
+    lua51Packages.lua
+    lua51Packages.luarocks
 
     nodejs_24 # needed for tree-sitter, other packages
 
