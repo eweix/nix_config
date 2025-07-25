@@ -46,11 +46,6 @@
     beans = "cd ~/Finances && nvim ledgers/$(date +%Y).beancount";
     money = "cd ~/Finances && fava main.beancount";
 
-    # hledger functions
-    h = "heldger";
-    ha = "hledger add";
-    ledger = "cd ~/desk/finances && nvim";
-
     # python development
     pyv = "source .venv/bin/activate || conda activate"; # python env activation command
     pyd = "deactivate || conda deactivate"; #
