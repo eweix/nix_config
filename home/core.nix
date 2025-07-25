@@ -31,6 +31,9 @@
     go
     prettierd # prettier daemon
 
+    luajit
+    luajitPackages.luarocks
+
     nodejs_24 # needed for tree-sitter, other packages
 
     # finance tools
