@@ -45,6 +45,7 @@
     fastfetch # neofetch replacement
     tree
     pay-respects # nicer version of The Fuck
+    sherlock
   ];
 
   programs = {

@@ -5,6 +5,7 @@
     initContent = ''
       eval "$(direnv hook zsh)"
       eval "$(starship init zsh)"
+      eval "$(eval pay-respects zsh)"
 
       export PATH="/Users/eweix/.local/bin:$PATH"
 
