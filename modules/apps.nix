@@ -84,6 +84,7 @@
       "vscodium" # all purpose IDE
       "mactex-no-gui" # TeX live installation, no GUI
       "miniconda"
+      "cyberduck"
 
       # Security
       "lulu" # Firewall
@@ -107,6 +108,7 @@
 
       # for fun
       "steam"
+      "starsector" # space warcrimes
 
       # Misc
       "monitorcontrol" # Brightness and volume controls for external monitors.
