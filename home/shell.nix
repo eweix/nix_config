@@ -29,6 +29,7 @@
     ff = "fastfetch";
     lg = "lazygit";
     g = "lazygit";
+    j = "just";
 
     mkdir = "mkdir -pv"; # make parent directories when making directory
     mount = "mount |column -t"; # make mount command readable
