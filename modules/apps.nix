@@ -75,6 +75,7 @@
       "discord" # social
       "slack" # for work
       "element" # matrix client
+      "zoom"
 
       # Development
       "wezterm" # Terminal emulator
