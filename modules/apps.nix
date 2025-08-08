@@ -44,7 +44,7 @@
     # them. otherwise Apple Store will refuse to install them. For details, see
     # https://github.com/mas-cli/mas
     masApps = {
-      "Paprika Recipe Manager 3" = 1303222868; # Recipe manager
+      # "Paprika Recipe Manager 3" = 1303222868; # Recipe manager
       "Things 3" = 904280696; # To-do list
       "Amphetamine" = 937984704; # Sleep utility
       "Xcode" = 497799835; # Developer tools
