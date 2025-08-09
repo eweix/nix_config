@@ -31,22 +31,22 @@
     g = "lazygit";
     j = "just";
 
+    # docker test shortcuts
+    db = "docker build";
+    drs = "docker run --user $(id -u):$(id -g) --rm=true -it -v $(pwd):/scratch -w /scratch";
+    dls = "docker system df && docker system --help";
+
     mkdir = "mkdir -pv"; # make parent directories when making directory
     mount = "mount |column -t"; # make mount command readable
 
     # Shortcuts
-    dots = "cd ~/.config && chezmoi edit";
-    nixcon = "cd ~/dev/nix && nvim"; # edit dotfiles & nix config
-    flakes = "cd ~/dev/flakes && nvim"; # edit flake repo
-    snip = "cd ~/dev/snippets && nvim"; # edit snippets
-    snips = "cd ~/dev/snippets && nvim";
-    snippets = "cd ~/dev/snippets && nvim";
-    dev = "cd ~/dev && eza";
-
-    # beancount functions
-    b = "nvim ~/Finances/ledgers/$(date +%Y).beancount";
-    beans = "cd ~/Finances && nvim ledgers/$(date +%Y).beancount";
-    money = "cd ~/Finances && fava main.beancount";
+    dots = "(cd ~/.config && chezmoi edit)";
+    nixcon = "(cd ~/dev/nix && nvim)"; # edit dotfiles & nix config
+    nixup = "(cd ~/dev/nix && just darwin)"; # update nix-darwin configuration
+    flakes = "(cd ~/dev/flakes && nvim)"; # edit flake repo
+    snip = "(cd ~/.snippets && nvim)"; # edit snippets
+    snips = "(cd ~/.snippets && nvim)";
+    snippets = "(cd ~/.snippets && nvim)";
 
     # python development
     pyv = "source .venv/bin/activate || conda activate"; # python env activation command
