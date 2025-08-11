@@ -16,6 +16,7 @@
     pandoc # A file processer and converter
     pngquant # compresses pngs very nicely!
     fd # needed for some telescope and nvim stuff
+    bat # cat clone with git integration and syntax highlighting
 
     aria2 # A lightweight multi-protocol & multi-source command-line download utility
 
@@ -36,9 +37,9 @@
 
     nodejs_24 # needed for tree-sitter, other packages
 
-    # finance tools
-    beancount
-    fava
+    gnupg # GNU privacy guard
+    age # small encryption keys
+    pass # unix keychain
 
     # misc
     chezmoi
